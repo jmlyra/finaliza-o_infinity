@@ -16,7 +16,7 @@ nome = st.text_input("Nome do Cliente")
 telefone = st.text_input("Telefone do Cliente")
 email = st.text_input("E-mail do Cliente")
 
-# Supondo uma lista de quartos (você poderia ter uma lógica de busca)
+# Supondo uma lista de quartos
 quartos = [
     Quarto(numero=101, tipo="Single", preço=150, status="Disponível"),
     Quarto(numero=102, tipo="Double", preço=250, status="Disponível"),
