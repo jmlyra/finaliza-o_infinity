@@ -17,7 +17,7 @@ class GerenciadorReservas:
         nova_reserva = Reserva(dono, quarto, data_checkin, data_checkout, status)
         self.reservas.append(nova_reserva)
 
-        # 🔥 NOVA PARTE → salvar no CSV
+        #  salvar no CSV
         dados = {
             "cliente_id": dono.ID,
             "telefone": dono.tel,
