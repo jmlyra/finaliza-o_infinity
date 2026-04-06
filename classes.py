@@ -6,10 +6,11 @@ class Hotel:
 
 
 class Cliente:
-    def __init__ (self,tel,email,ID):
+    def __init__ (self,tel,email,ID,nome):
         self.tel = tel
         self.email = email
         self.ID = ID
+        self.nome = nome
 
 
 class Quarto: 
