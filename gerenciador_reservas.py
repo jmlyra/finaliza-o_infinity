@@ -19,6 +19,7 @@ class GerenciadorReservas:
 
         #  salvar no CSV
         dados = {
+            "Cliente_nome":dono.nome,
             "cliente_id": dono.ID,
             "telefone": dono.tel,
             "email": dono.email,

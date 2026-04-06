@@ -12,9 +12,11 @@ st.title("Sistema de Hospedagem")
 # Formulário para inserir dados
 st.header("Faça sua Reserva")
 
+
 nome = st.text_input("Nome do Cliente")
 telefone = st.text_input("Telefone do Cliente")
 email = st.text_input("E-mail do Cliente")
+cpf = st.text_input("CPF do cliente")
 
 # Supondo uma lista de quartos
 quartos = [
@@ -35,7 +37,7 @@ if st.button("Reservar"):
     quarto_escolhido = next(q for q in quartos if f"Quarto {q.numero} - {q.tipo} (R${q.preço})" == quarto_opcao)
     
     # Cria o cliente
-    cliente = Cliente( tel=telefone, email=email, ID=None)  # ID pode ser gerado ou incrementado
+    cliente = Cliente( tel=telefone, email=email, ID=cpf, nome = nome)  # ID pode ser gerado ou incrementado
 
     # Cria a reserva
     gerenciador.criar_reserva(
